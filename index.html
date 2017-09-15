@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-
-<!-- WhatsHelp.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            facebook: "uguudei", // Facebook page ID
-            company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
-            greeting_message: "Hello, how may i help you? Just send me a message now to get assistance.", // Text of greeting message
-            call_to_action: "Message me", // Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '255764971238848',
+    xfbml      : true,
+    version    : 'v2.6'
+  });
+};
+ 
+(function(d, s, id){
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 </script>
-<!-- /WhatsHelp.io widget -->
 
 
 <body>
@@ -27,6 +26,16 @@
 <p>I am</p>
 <p>I am Uguudei!</p>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<div class="fb-page"
+     data-href="https://www.facebook.com/Uguudei.E/"
+     data-tabs="messages"
+     data-width="400"
+     data-height="300"
+     data-small-header="true">
+  <div class="fb-xfbml-parse-ignore">
+    <blockquote></blockquote>
+  </div>
+</div>
+
 </body>
 </html>
