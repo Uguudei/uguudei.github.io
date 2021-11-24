@@ -1,11 +1,12 @@
 # This is a basic workflow to automatically build a Svelte app and deploy it to GitHub Pages
 
-name: Build and Deploy to Github Pages
+name: Build and Deploy
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
