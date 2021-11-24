@@ -1,4 +1,8 @@
+# Used for building Svelte
 /node_modules/
 /public/build/
 
 .DS_Store
+
+# Npm - A manifestation of the manifest
+package-lock.json
