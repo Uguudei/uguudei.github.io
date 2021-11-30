@@ -6,3 +6,6 @@
 
 # Npm - A manifestation of the manifest
 package-lock.json
+
+# VS Code settings
+.vscode/settings.json
