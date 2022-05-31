@@ -68,3 +68,11 @@ Deployed to Github Pages and Netlify
 ## Enable PWA
 
 [Example repo](https://github.com/tretapey/svelte-pwa)
+
+## Upgrade packages
+
+```bash
+npm i -g npm-check-updates
+ncu -u
+npm install
+```
