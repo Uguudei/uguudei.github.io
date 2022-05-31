@@ -1,3 +1,5 @@
+[![Build and Deploy](https://github.com/Uguudei/uguudei.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Uguudei/uguudei.github.io/actions/workflows/deploy.yml)
+
 # Svelte Portfolio
 
 This is a Svelte project generated from [Svelte template](https://github.com/sveltejs/template).
