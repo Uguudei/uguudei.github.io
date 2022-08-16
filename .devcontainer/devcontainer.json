@@ -24,14 +24,15 @@
 					"source.organizeImports": true
 				},
 				"files.autoSave": "afterDelay",
-				"files.trimTrailingWhitespace": true
+				"files.trimTrailingWhitespace": true,
+				"files.trimFinalNewlines": true
 			},
 
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"dbaeumer.vscode-eslint",
 				"DavidAnson.vscode-markdownlint",
-				"svelte.svelte-vscode"
+				"vue.volar"
 			]
 		}
 	},
