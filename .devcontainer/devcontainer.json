@@ -1,5 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/javascript-node
+// https://github.com/devcontainers/images/tree/main/src/javascript-node
 {
 	"name": "Node.js",
 	"runArgs": [
@@ -7,10 +7,7 @@
 	],
 	"build": {
 		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 18, 16, 14.
-		// Append -bullseye or -buster to pin to an OS version.
-		// Use -bullseye variants on local arm64/Apple Silicon.
-		"args": { "VARIANT": "16-bullseye" }
+		"args": { "VARIANT": "18-bullseye" }
 	},
 
 	// Configure tool-specific properties.
@@ -25,7 +22,12 @@
 				},
 				"files.autoSave": "afterDelay",
 				"files.trimTrailingWhitespace": true,
-				"files.trimFinalNewlines": true
+				"files.trimFinalNewlines": true,
+				"[vue]": {
+					"editor.insertSpaces": true,
+					"editor.tabSize": 2,
+					"editor.autoIndent": "keep"
+				}
 			},
 
 			// Add the IDs of extensions you want installed when the container is created.
